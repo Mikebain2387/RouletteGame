@@ -8,76 +8,76 @@
     <title>Roulette</title>
   </head>
   <body>
-    <div class="container rouletteBoard">
+    <div class="container mt-5">
       <div class="row">
-        <div class="col-1"></div>
-        <div class="box zero col-4"><h2>0</h2></div>
-        <div class="col-4"></div>
-      </div>
-
-      <div class="row row1">
-        <div class="oddOrEven col-1"><h2>ODD</h2></div>
-
-        <div class="box one odd col-1"><h2>1</h2></div>
-
-        <div class="box two even col-1"><h2>2</h2></div>
-
-        <div class="box three col-1 odd"><h2>3</h2></div>
-
-        <div class="box four col-1 even"><h2>4</h2></div>
-
-        <div class="col-7"></div>
-
-        <div class="box five col-1 odd"><h2>5</h2></div>
-
-        <div class="box six col-1 even"><h2>6</h2></div>
-
-        <div class="box seven col-1 odd"><h2>7</h2></div>
-
-        <div class="box eight col-1 even"><h2>8</h2></div>
-
-        <div class="box nine odd"><h2>9</h2></div>
-        <div class="box ten even"><h2>10</h2></div>
-        <div class="box eleven odd"><h2>11</h2></div>
-        <div class="box twelve even"><h2>12</h2></div>
-      </div>
-
-      <div class="row row1">
-        <div class="odd">
-          <h2>RED</h2>
-          <h2>Black</h2>
+        <div class="roulette-board">
+          <div class="zero">0</div>
+          <div class="left-columns">
+            <div class="left-column oddBet">Odd</div>
+            <div class="left-column colorBet">
+              <div class="d-flex">
+                <div class="mt-5 black">Black</div>
+                <div class="mt-5 red">Red</div>
+              </div>
+            </div>
+            <div class="left-column evenBet">Even</div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="number odd">1</div>
+              <div class="number even">4</div>
+              <div class="number odd">7</div>
+              <div class="number even">10</div>
+              <div class="number odd">13</div>
+              <div class="number even">16</div>
+              <div class="number odd">19</div>
+              <div class="number even">22</div>
+              <div class="number odd">25</div>
+              <div class="number even">28</div>
+              <div class="number odd">31</div>
+              <div class="number even">34</div>
+            </div>
+            <div class="column">
+              <div class="number even">2</div>
+              <div class="number odd">5</div>
+              <div class="number even">8</div>
+              <div class="number odd">11</div>
+              <div class="number even">14</div>
+              <div class="number odd">17</div>
+              <div class="number even">20</div>
+              <div class="number odd">23</div>
+              <div class="number even">26</div>
+              <div class="number odd">29</div>
+              <div class="number even">32</div>
+              <div class="number odd">35</div>
+            </div>
+            <div class="column">
+              <div class="number odd">3</div>
+              <div class="number even">6</div>
+              <div class="number odd">9</div>
+              <div class="number even">12</div>
+              <div class="number odd">15</div>
+              <div class="number even">18</div>
+              <div class="number odd">21</div>
+              <div class="number even">24</div>
+              <div class="number odd">27</div>
+              <div class="number even">30</div>
+              <div class="number odd">33</div>
+              <div class="number even">36</div>
+            </div>
+          </div>
         </div>
-        <div class="box thirteen odd"><h2>13</h2></div>
-        <div class="box fourteen even"><h2>14</h2></div>
-        <div class="box fifteen odd"><h2>15</h2></div>
-        <div class="box sixteen even"><h2>16</h2></div>
-        <div class="box seventeen odd"><h2>17</h2></div>
-        <div class="box eighteen even"><h2>18</h2></div>
-        <div class="box nineteen odd"><h2>19</h2></div>
-        <div class="box twenty even"><h2>20</h2></div>
-        <div class="box twentyOne odd"><h2>21</h2></div>
-        <div class="box twentyTwo even"><h2>22</h2></div>
-        <div class="box twentyThree odd"><h2>23</h2></div>
-        <div class="box twentyFour even"><h2>24</h2></div>
-      </div>
 
-      <div class="row row1">
-        <div class="oddOrEven"><h2>EVEN</h2></div>
-        <div class="box twentyFive odd"><h2>25</h2></div>
-        <div class="box twentySix even"><h2>26</h2></div>
-        <div class="box twentySeven odd"><h2>27</h2></div>
-        <div class="box twentyEight even"><h2>28</h2></div>
-        <div class="box twentyNine odd"><h2>29</h2></div>
-        <div class="box thirty even"><h2>30</h2></div>
-        <div class="box tirtyOne odd"><h2>31</h2></div>
-        <div class="box thirtyTwo even"><h2>32</h2></div>
-        <div class="box thirtyThree odd"><h2>33</h2></div>
-        <div class="box thirtyFour even"><h2>34</h2></div>
-        <div class="box thirtyFive odd"><h2>35</h2></div>
-        <div class="box thirtySix even"><h2>36</h2></div>
+        <div class="col-4 text-center">
+          <div class="display col-8 mt-5 mx-auto">
+            <h2 class="mt-4">Winning Number:</h2>
+            <div class="winningNum col-2 mx-auto mt-4 mb-4">23</div>
+          </div>
+
+          <div class="mt-2 col-12"><button type="submit">SPIN</button></div>
+        </div>
       </div>
     </div>
-
     <script src="./app.js"></script>
   </body>
 </html>
