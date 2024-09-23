@@ -1,11 +1,35 @@
 html body{
- background-color: rgb(41, 235, 41);
+ background-color: rgb(41, 206, 235);
 }
+.noto-serif-old-uyghur-regular {
+ font-family: "Noto Serif Old Uyghur", serif;
+ font-weight: 400;
+ font-style: normal;
+}
+
 
 .roulette-board {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  grid-template-columns: fit-content(100%);
+ 
+}
+
+.title h1{
+ font-family: "Noto Serif Old Uyghur", serif;
+ font-style: italic;
+ font-size: 80px;
+ font-weight: bold;
+ color:  #f9cb14;
+ text-shadow: 5px 1px 0px black;
+}
+
+.title h2{
+ font-size: 30px;
+ font-family: "Noto Serif Old Uyghur", serif;
+ color: #2f2f2f;
+ font-weight: bolder;
+ text-shadow: 2px 2px 5px #f7f7f7;
 }
 
 .zero {
@@ -17,7 +41,7 @@ html body{
  padding: 10px;
  border: 2px solid white;
  font-weight: bolder;
- width: 458px;
+ width: 423px;
 }
 
 .left-columns {
@@ -57,10 +81,10 @@ text-orientation: mixed;
 }
 
 .columns {
- grid-column: 2;
+ grid-column: 2 ;
 
  display: grid;
- grid-template-columns: repeat(8, 1fr);
+ grid-template-columns: repeat(4, 1fr);
  
 }
 
@@ -106,6 +130,7 @@ text-orientation: mixed;
  background: rgb(28, 137, 28);
  color: whitesmoke;
  text-shadow: 5px 5px 5px black;
+ box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.463);
 }
 
 .winningNum{
@@ -113,6 +138,15 @@ text-orientation: mixed;
  background-color: white;
  color: black;
  text-shadow: none;
+ font-size: 30px;
+}
+
+.spin button{
+ background: red;
+ padding: 5px 15px 5px 15px;
+ color: whitesmoke;
+ font-weight: bolder;
+ border-radius: 25px;
 }
 
 
