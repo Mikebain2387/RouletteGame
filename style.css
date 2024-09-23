@@ -33,14 +33,16 @@ html body{
 }
 
 .zero {
+ font-size: 25px;
  grid-column: 2;
  grid-row: 1;
  text-align: center;
  background-color: rgb(28, 137, 28);
- color: rgb(255, 250, 250);
+ color: rgb(252, 252, 252);
  padding: 10px;
  border: 2px solid white;
  font-weight: bolder;
+ text-shadow: 3px 1px 3px rgb(8, 8, 8);
  width: 423px;
 }
 
@@ -54,7 +56,7 @@ display: grid;
 
 .left-column {
  background-color:rgb(28, 137, 28);
- color: rgb(255, 255, 255);
+
  text-align: center;
  padding: 10px;
  font-weight: bolder;
@@ -92,6 +94,12 @@ text-orientation: mixed;
  display: flex;
  flex-direction: column;
  
+}
+
+.oddBet, .evenBet{
+ font-size: 30px;
+color: whitesmoke;
+ text-shadow: 1px 1px 5px rgb(11, 10, 10);
 }
 
 .number {
