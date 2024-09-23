@@ -142,6 +142,7 @@ color: whitesmoke;
 }
 
 .winningNum{
+ height: 45px;
  border: 2px solid rgb(64, 64, 64);
  background-color: white;
  color: black;
