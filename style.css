@@ -150,6 +150,17 @@ color: whitesmoke;
  font-size: 30px;
 }
 
+.selection{
+ cursor: pointer;
+}
+.selected{
+color: black;
+background: rgb(209, 209, 10);
+text-shadow: none;
+
+font-weight: bolder;
+}
+
 .spin button{
  background: red;
  padding: 5px 15px 5px 15px;
