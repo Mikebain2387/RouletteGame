@@ -2,7 +2,7 @@ const winnerDisplay = document.getElementById('winningNum');
 const spin = document.getElementById('spinButton');
 const selection = document.getElementsByClassName('selection');
 let walletValue = document.getElementById('wallet');
-let wallet = 500;
+let wallet = 10;
 
   // Set  wallet value inside html
   document.getElementById('wallet').textContent = wallet;
@@ -30,6 +30,15 @@ for (let i = 0; i < selection.length; i++) {
 spin.addEventListener('click', spinToWin)
 
 function spinToWin(){
+
+  // Display the image and start spinning
+  spinImage.style.display = 'block';
+
+  // Hide the image after 5 seconds
+  setTimeout(() => {
+      spinImage.style.display = 'none';
+  }, 5000);
+
  const winningNumber =  Math.floor(Math.random(0) * 36);
  console.log(winningNumber)
  if(winningNumber% 2 === 0 && winningNumber != 0){
