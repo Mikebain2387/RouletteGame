@@ -14,7 +14,7 @@ html body{
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  grid-template-columns: fit-content(100%);
- 
+ opacity: 80%;
 }
 
 .title h1{
@@ -123,6 +123,7 @@ text-orientation: mixed;
  border-bottom:2px solid white ;
 }
 .column3{
+ 
  border-bottom:2px solid white ;
  border-right: 2px solid white;
 }
@@ -175,8 +176,8 @@ color: whitesmoke;
 
 .winningNum{
  height: 45px;
- border: 2px solid rgb(249, 243, 243);
- background-color: white;
+ 
+ background-color: rgba(255, 255, 255, 0.669);
  color: black;
  text-shadow: none;
  font-size: 30px;
