@@ -20,18 +20,20 @@ html body{
 .title h1{
  font-family: "Noto Serif Old Uyghur", serif;
  font-style: italic;
+ letter-spacing: 1.5px;
  font-size: 80px;
  font-weight: bold;
  color:  #FFFF00;
- text-shadow: 5px 1px 0px rgb(52, 138, 236);
+ text-shadow: 5px 1px 0px rgba(52, 138, 236, 0.788);
 }
 
 .title h2{
+ letter-spacing: 3px;
  font-size: 30px;
  font-family: "Noto Serif Old Uyghur", serif;
  color: rgb(255, 255, 255);
  font-weight: bolder;
- text-shadow: 2px 2px 5px rgb(10, 9, 9);
+ text-shadow: 3px 2px 2px rgb(52, 138, 236);
 }
 
 .zero {
@@ -42,9 +44,8 @@ html body{
  background-color: rgb(28, 137, 28);
  color: ivory;
  padding: 10px;
- border-top: 2px solid white;
- border-right: 2px solid white;
- border-left: 2px solid white;
+ border: 2px solid white;
+ 
  font-weight: bolder;
  text-shadow: 3px 1px 3px rgb(8, 8, 8);
  width: 424.5px;
@@ -54,9 +55,8 @@ html body{
 grid-column: 1;
 grid-row: 2;
 display: grid;
-border-top: 2px solid white;
- border-left: 2px solid white;
- border-bottom: 2px solid white;
+border: 2px solid white;
+ 
 }
 
 
