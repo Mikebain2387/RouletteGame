@@ -88,17 +88,25 @@
           </div>
 
           <div class="mt-3 col-12 spin">
+            <button id="clear-bets-button">Clear</button>
             <button id="spinButton" type="submit">SPIN TO WIN</button>
+
+            <button id="restart-button">Restart</button>
           </div>
           <div class="row mt-4">
-            <div id="bet-amounts" class="col-4 ms-5">
-              <button class="bet-amount me-2" value="5">$5</button>
-              <button class="bet-amount ms-2" value="10">$10</button>
+            <div id="bet-amounts" class="col-12">
+              <button class="bet-amount" value="5">$5</button>
+              <button class="bet-amount ms-3 me-3" value="10">$10</button>
               <button class="bet-amount" value="100">$100</button>
             </div>
-            <div class="col-4 wallet mt-4">
-              <p>Wallet: $<span id="wallet"></span></p>
+            <div class="col-12 wallet mt-4">
+              <div class="mx-auto col-4 text-center">
+                <p>Wallet: $<span id="wallet"></span></p>
+              </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-12" id="result-message"></div>
           </div>
         </div>
       </div>
