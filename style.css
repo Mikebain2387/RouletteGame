@@ -9,6 +9,14 @@ html body{
  font-style: normal;
 }
 
+.highlight {
+  border: 2px solid rgb(32, 31, 31);
+  background-color: yellow !important;
+  color: black !important;
+  transform: scale(1.1);
+}
+
+
 
 .roulette-board {
  display: grid;
@@ -192,7 +200,7 @@ color: black;
 background: #FFFF00;
 text-shadow: none;
 
-font-weight: bolder;
+font-weight: bold;
 }
 
 #spinImage{
