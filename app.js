@@ -27,8 +27,8 @@ function spinToWin() {
         return;
     }
 
-    winnerDisplay.textContent = '';//remove winning number display on new spin
-    resultMessage.textContent = '';//remove results message on new spin
+    winnerDisplay.textContent = '';//remove previous winning number display on new spin
+    resultMessage.textContent = '';//remove previous results message on new spin
 
     for (let i = 0; i < selection.length; i++) {
         selection[i].classList.remove('highlight'); //remove previous winning selection on spin
@@ -166,10 +166,11 @@ clearButton.addEventListener('click', function() {
 restartButton.addEventListener('click', function() {
  wallet = 1000; // Reset wallet amount to 1000
  walletValue.textContent = wallet;
- winnerDisplay.textContent = '';
- resultMessage.textContent = '';
- betAmount = 0;
+ winnerDisplay.textContent = ''; //removes winning number from display
+ resultMessage.textContent = ''; //remove result message
+ betAmount = 0; //set bet amount back to 0
  for (let i = 0; i < selection.length; i++) {
-     selection[i].classList.remove('selected');
+     selection[i].classList.remove('selected'); //removes selections on restart
+     selection[i].classList.remove('highlight'); //removes highlighted winning number on restart
  }
 });
