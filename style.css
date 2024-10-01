@@ -273,7 +273,8 @@ font-weight: bold;
 #result-message{
  font-size: 40px;
  color: white;
- 
+ font-weight: bolder;
+ text-shadow: 1px 1px 1px rgb(245, 238, 238);
 }
 
 

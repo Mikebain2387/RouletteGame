@@ -41,7 +41,7 @@ function spinToWin() {
         return;
     }
 
-    updateWallet(-totalBetAmount); // Deduct the total bet amount from the wallet
+    updateWallet(-totalBetAmount); // subtract the total bet amount from the wallet
 
     // Display the image and start spinning
     spinImage.style.display = 'block';
@@ -60,7 +60,7 @@ function spinToWin() {
             const isEven = !isOdd; // Determine if the winning number is even
             const color = isOdd ? 'Red' : 'Black'; // Determine the color based on odd/even
 
-            winnerDisplay.textContent = winningNumber !== 0 ? `${winningNumber} ${color}` : `${winningNumber}`; // Display the winning number and color
+            winnerDisplay.textContent = winningNumber !== 0 ? `${winningNumber} ${color}` : `${winningNumber}`; // Display the winning number and color, unless 0 then only shows 0
 
             // Calculate payouts
             totalPayout = 0;
@@ -109,7 +109,7 @@ function spinToWin() {
             // Check if the user has lost all their money
             if (wallet <= 0) {
                 alert('Game Over! You have lost all your money.'); // Display game over message
-                // Optionally, you can reset the game here
+                //  you can reset the game here
                 wallet = 1000; // Reset wallet amount
                 updateWallet(0); // Update wallet display
                 betAmounts.clear(); // Clear all bets
