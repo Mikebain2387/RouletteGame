@@ -45,7 +45,7 @@ html body{
 }
 
 .zero {
- font-size: 25px;
+ font-size: 30px;
  grid-column: 2;
  grid-row: 1;
  text-align: center;
@@ -53,7 +53,6 @@ html body{
  color: ivory;
  padding: 10px;
  border: 2px solid white;
- 
  font-weight: bolder;
  text-shadow: 3px 1px 3px rgb(8, 8, 8);
  width: 424.5px;
@@ -142,13 +141,14 @@ color: whitesmoke;
 }
 
 .number {
-
+  font-size: 20px;
+font-weight: bold;
  color: white;
  text-align: center;
  padding: 10px;
- 
- text-shadow: 3px 1px 4px rgba(255, 255, 255, 1),
-             -3px -1px 4px rgba(255, 255, 255, 1);
+ opacity: 100%;
+ text-shadow: 1px 1px 1px rgb(255, 251, 251);
+             
 }
 
 .odd{
@@ -157,6 +157,7 @@ color: whitesmoke;
 
 .even{
  background: black;
+ text-shadow: 1px 1px 1px rgb(255, 252, 252);
 }
 
 .black{
@@ -198,8 +199,7 @@ color: whitesmoke;
 .selected{
 color: black;
 background: #FFFF00;
-text-shadow: none;
-
+text-shadow: 1px 1px 3lvh rgb(224, 224, 224);
 font-weight: bold;
 }
 
@@ -255,7 +255,9 @@ font-weight: bold;
  transform: scale(.95);
 }
 
-
+.bet-amount:focus  {
+border: 3px solid white;
+}
 
 
 .wallet p{
@@ -279,37 +281,77 @@ font-weight: bold;
 
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
- .roulette-board {
-   grid-template-columns: 1fr;
- }
 
- .zero {
-   grid-column: span 1;
- }
 
- .left-columns {
-   flex-direction: row;
-   justify-content: space-around;
- }
+/*Media Query*/
 
- .columns {
-   grid-template-columns: 1fr;
- }
+@media (min-width: 370px) and (max-width: 480px){
+  #spinImage{
+    display: none !important;
+  }
 
- .column {
-   flex-direction: row;
-   flex-wrap: wrap;
- }
+.roulette-board{
+transform: none !important;
+    
+border-radius: none !important;
+box-shadow: none !important;
+transition: none !important;
+margin-left: 32px;
 
- .number {
-   flex: 1 1 calc(33.333% - 20px);
-   margin: 10px;
- }
+  }
+
+  .roulette-board .zero{
+    width:220px;
+  }
 }
 
+@media (min-width: 481px) and (max-width:1023px){
+  #spinImage{
+    display: none !important;
+  }
 
+.roulette-board{
+transform: none !important;
+    
+border-radius: none !important;
+box-shadow: none !important;
+transition: none !important;
+margin-left: 72px;
 
+  }
 
+  .roulette-board .zero{
+    width: 468px;
+  }
+}
 
+@media (min-width: 1024px) and (max-width:1270px){
+HTML body{
+  background-size: cover;
+  background-position: center;}
+
+   .zero {
+    width: 344px;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 58% !important;
+}
+.roulette-board{
+  width: 500px;
+  transform: none !important;
+box-shadow: none !important;
+transition: none !important;
+}
+
+#spinImage{
+  z-index: 6;
+        display: none;
+        height: 473px;
+        width: auto;
+        position: absolute;
+        top: 625px;
+        left: 555px;
+ }
+ 
+}

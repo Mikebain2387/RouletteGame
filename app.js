@@ -27,6 +27,9 @@ function spinToWin() {
         return;
     }
 
+    winnerDisplay.textContent = '';//remove winning number display on new spin
+    resultMessage.textContent = '';//remove results message on new spin
+
     for (let i = 0; i < selection.length; i++) {
         selection[i].classList.remove('highlight'); //remove previous winning selection on spin
     }
