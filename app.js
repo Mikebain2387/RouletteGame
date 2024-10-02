@@ -33,8 +33,8 @@ function spinToWin() {
     for (let i = 0; i < selection.length; i++) {
         selection[i].classList.remove('highlight'); //remove previous winning selection on spin
     }
-    // Subtract the total bet amount from the wallet
 
+    // Subtract the total bet amount from the wallet
     let totalBetAmount = 0;
     for (let [value, amount] of betAmounts) {
         totalBetAmount += amount; // Calculate the total bet amount.  
@@ -113,7 +113,7 @@ function spinToWin() {
 
             // Check if the user has lost all their money
             if (wallet <= 0) {
-                alert('Game Over! You have lost all your money.'); // Display game over message
+                alert('Game Over! You have lost all your money.  Click ok to start a new game'); // Display game over message
                 //  you can reset the game here
                 wallet = 1000; // Reset wallet amount
                 updateWallet(0); // Update wallet display
@@ -149,7 +149,7 @@ for (let i = 0; i < selection.length; i++) {
 
 for (let i = 0; i < bet.length; i++) {
     bet[i].addEventListener('click', function() {
-        betAmount = +bet[i].value; // retrieves the value of the current elemnet, the "+" operator converts the string value to a number and set the bet amount to a numeric value
+        betAmount = +bet[i].value; // retrieves the value of the current elemnet, the "+" operator converts the string value to a number and sets the bet amount to a numeric value
     });
 }
 
