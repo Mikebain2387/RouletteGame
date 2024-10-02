@@ -19,7 +19,7 @@ function updateWallet(amount) {
     walletValue.textContent = wallet; // Display the updated wallet amount
 }
 
-spin.addEventListener('click', spinToWin); // Add event listener to the spin button
+spin.addEventListener('click', spinToWin); // event listener for the spin button
 
 function spinToWin() {
     if (betAmounts.size === 0) {
@@ -34,6 +34,7 @@ function spinToWin() {
         selection[i].classList.remove('highlight'); //remove previous winning selection on spin
     }
     // Subtract the total bet amount from the wallet
+
     let totalBetAmount = 0;
     for (let [value, amount] of betAmounts) {
         totalBetAmount += amount; // Calculate the total bet amount.  
@@ -60,7 +61,7 @@ function spinToWin() {
             const winningNumber = Math.floor(Math.random() * 36); // Generate a random winning number
             console.log(`Winning Number: ${winningNumber}`);
             const isOdd = winningNumber % 2 !== 0; // Determine if the winning number is odd
-            const isEven = !isOdd; // Determine if the winning number is even
+            const isEven = winningNumber % 2; // Determine if the winning number is even
             const color = isOdd ? 'Red' : 'Black'; // Determine the color based on odd/even
 
             winnerDisplay.textContent = winningNumber !== 0 ? `${winningNumber} ${color}` : `${winningNumber}`; // Display the winning number and color, unless 0 then only shows 0
@@ -69,11 +70,11 @@ function spinToWin() {
             totalPayout = 0;
             //  for of loop that iterates over each entry in the betAmounts map. The betAmounts map stores the user’s bets, where value is the bet type (specific number, ‘odd’, ‘even’, ‘red’, ‘black’) and amount is the amount of money bet on that type
             for (let [value, amount] of betAmounts) {
-                let payout = 0;
+                let payout = 0; //initializes bet amount is 0, this variable stores the payout for the current bet
 
                 if (winningNumber === 0) {
                     if (value == '0') {
-                        payout = amount * 35; // Payout for winning on 0
+                        payout = amount * 35; // Payout for winning on 0, 0 is neither odd or even, neither red or black
                     }
                 } else {
                     if ((value === 'odd' && isOdd) || (value === 'even' && isEven) || (value === 'red' && isOdd) || (value === 'black' && isEven)) {
