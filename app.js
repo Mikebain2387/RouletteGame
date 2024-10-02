@@ -132,7 +132,7 @@ function spinToWin() {
 
 for (let i = 0; i < selection.length; i++) {
     selection[i].addEventListener('click', function() {
-        const value = selection[i].getAttribute('data-value');
+        const value = selection[i].getAttribute('data-value'); //retrieves the value of the data-value attribute from the current element.
         if (selection[i].classList.contains('selected')) {
             selection[i].classList.remove('selected'); // Deselect the selection
             betAmounts.delete(value); // Remove the bet amount for the deselected selection
@@ -149,7 +149,7 @@ for (let i = 0; i < selection.length; i++) {
 
 for (let i = 0; i < bet.length; i++) {
     bet[i].addEventListener('click', function() {
-        betAmount = +bet[i].value; // Convert string to number and set the bet amount
+        betAmount = +bet[i].value; // retrieves the value of the current elemnet, the "+" operator converts the string value to a number and set the bet amount to a numeric value
     });
 }
 
