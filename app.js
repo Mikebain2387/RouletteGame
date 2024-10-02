@@ -10,7 +10,7 @@ const resultMessage = document.getElementById('result-message'); // Get the resu
 let wallet = 1000; // Initialize the wallet amount
 let betAmount = 0; // Initialize the bet amount
 let totalPayout = 0; // Initialize the total payout
-const betAmounts = new Map(); // Create a map to store bet amounts for each selection
+const betAmounts = new Map(); // creates a new Map object and assigns it to the betAmounts variable. This map will store the bet amounts for each selection on the roulette board.
 
 document.getElementById('wallet').textContent = wallet; // Display the initial wallet amount
 
@@ -36,7 +36,7 @@ function spinToWin() {
     // Subtract the total bet amount from the wallet
     let totalBetAmount = 0;
     for (let [value, amount] of betAmounts) {
-        totalBetAmount += amount; // Calculate the total bet amount
+        totalBetAmount += amount; // Calculate the total bet amount.  
     }
 
     if (wallet < totalBetAmount) {
@@ -67,6 +67,7 @@ function spinToWin() {
 
             // Calculate payouts
             totalPayout = 0;
+            //  for of loop that iterates over each entry in the betAmounts map. The betAmounts map stores the user’s bets, where value is the bet type (specific number, ‘odd’, ‘even’, ‘red’, ‘black’) and amount is the amount of money bet on that type
             for (let [value, amount] of betAmounts) {
                 let payout = 0;
 
@@ -124,8 +125,8 @@ function spinToWin() {
                     selection[i].classList.remove('highlight'); // Clear all highlights
                 }
             }
-        }, 1000);
-    }, 5000);
+        }, 1000); //wait for the fade-out animation to complete
+    }, 5000); //spin duration
 }
 
 for (let i = 0; i < selection.length; i++) {
