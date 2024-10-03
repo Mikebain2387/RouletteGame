@@ -33,7 +33,8 @@ function spinToWin() {
     for (let i = 0; i < selection.length; i++) {
         selection[i].classList.remove('highlight'); //remove previous winning selection on spin
     }
-
+    console.log('Bets before spinning:', Array.from(betAmounts.entries())); // Log bets before spinning
+    
     // Subtract the total bet amount from the wallet
     let totalBetAmount = 0;
     for (let [value, amount] of betAmounts) {
@@ -143,13 +144,13 @@ for (let i = 0; i < selection.length; i++) {
             }
             selection[i].classList.add('selected'); // Select the selection
             betAmounts.set(value, betAmount); // Add the bet amount for the selected selection
-        }
+        }  
     });
 }
 
 for (let i = 0; i < bet.length; i++) {
     bet[i].addEventListener('click', function() {
-        betAmount = +bet[i].value; // retrieves the value of the current elemnet, the "+" operator converts the string value to a number and sets the bet amount to a numeric value
+        betAmount = +bet[i].value; // retrieves the value of the current bet, the "+" operator converts the string value to a number and sets the bet amount to a numeric value
     });
 }
 
