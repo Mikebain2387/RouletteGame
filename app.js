@@ -10,7 +10,7 @@ const resultMessage = document.getElementById('result-message'); // Get the resu
 let wallet = 1000; // Initialize the wallet amount
 let betAmount = 0; // Initialize the bet amount
 let totalPayout = 0; // Initialize the total payout
-const betAmounts = new Map(); // creates a new Map object and assigns it to the betAmounts variable. This map will store the bet amounts for each selection on the roulette board.
+const betAmounts = new Map(); // creates a new Map object and assigns it to the betAmounts variable. This map will store the bet amounts for each selection on the roulette board. ex. [1:100],[odd: 100]
 
 document.getElementById('wallet').textContent = wallet; // Display the initial wallet amount
 
