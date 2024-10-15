@@ -71,7 +71,7 @@ function spinToWin() {
             totalPayout = 0;
             //  for of loop that iterates over each entry in the betAmounts map. The betAmounts map stores the users bets, where value is the bet type (number, ‘odd’, ‘even’, ‘red’, ‘black’) and amount is the amount of money bet on that type
             for (let [value, amount] of betAmounts) {
-                let payout = 0; //initializes bet amount is 0, this variable stores the payout for the current bet
+                let payout = 0; //initializes payout is 0, this variable stores the payout for the current bet
 
                 if (winningNumber === 0) {
                     if (value == '0') {
@@ -129,7 +129,7 @@ function spinToWin() {
             }
         }, 1000); //wait for the fade-out animation to complete
     }, 5000); //spin duration
-}
+}//end of spin to win function
 
 for (let i = 0; i < selection.length; i++) {
     selection[i].addEventListener('click', function() {
