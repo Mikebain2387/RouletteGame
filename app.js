@@ -142,7 +142,7 @@ for (let i = 0; i < selection.length; i++) {
                 alert('Please select a bet amount first!'); // Prompt the user to select a bet amount
                 return;
             }
-            selection[i].classList.add('selected'); // Select the selection
+            selection[i].classList.add('selected'); // Select/highlight the selection
             betAmounts.set(value, betAmount); // Add the bet amount for the selected selection
         }  
     });
@@ -165,7 +165,7 @@ clearButton.addEventListener('click', function() {
     winnerDisplay.textContent = ''; // Clear winning number display
     resultMessage.innerHTML = ''; // Clear result message
 });
-
+//restart button
 restartButton.addEventListener('click', function() {
  wallet = 1000; // Reset wallet amount to 1000
  walletValue.textContent = wallet;
