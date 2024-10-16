@@ -61,8 +61,8 @@ function spinToWin() {
             // Highlight the winning number after the animation is completed
             const winningNumber = Math.floor(Math.random() * 36); // Generate a random winning number
             console.log(`Winning Number: ${winningNumber}`);
-            const isOdd = winningNumber % 2 !== 0; // Determine if the winning number is odd
-            const isEven = winningNumber % 2 === 0; // Determine if the winning number is even
+            const isOdd = winningNumber % 2 !== 0; // Determine if the winning number is odd, if number divided by 2 does not have a remainder of 0 it is odd
+            const isEven = winningNumber % 2 === 0; // Determine if the winning number is even, if number divided by 2 has no remainder it is even
             const color = isOdd ? 'Red' : 'Black'; // Determine the color based on odd/even
 
             winnerDisplay.textContent = winningNumber !== 0 ? `${winningNumber} ${color}` : `${winningNumber}`; // Display the winning number and color, unless 0 then only shows 0
