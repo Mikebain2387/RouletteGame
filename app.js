@@ -133,7 +133,7 @@ function spinToWin() {
 
 for (let i = 0; i < selection.length; i++) {
     selection[i].addEventListener('click', function() {
-        const value = selection[i].getAttribute('data-value'); //retrieves the value of the data-value attribute from the current element.
+        const value = selection[i].getAttribute('data-value'); //retrieves the value of the data-value attribute from the current element and sets it to the variable value, used in the map object.
         if (selection[i].classList.contains('selected')) {
             selection[i].classList.remove('selected'); // Deselect the selection
             betAmounts.delete(value); // Remove the bet amount for the deselected selection
